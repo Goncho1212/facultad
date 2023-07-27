@@ -1,0 +1,40 @@
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    padding:0;
+  }
+  
+  
+  
+  .logo img {
+    background-color: black;
+    /* Ajusta el tamaño de la imagen según tu preferencia */
+    width: 100px;
+    height: 70px;
+    /* Aquí puedes añadir más estilos como fondo de la imagen, etc. */
+  }
+  nav{
+    background-color: black;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0px 10px;
+    padding: 5px;
+  }
+  
+  nav ul li a {
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s; /* Transición suave para el efecto hover */
+  }
+  
+  nav ul li a:hover {
+    background-color: red; /* Color rojo cuando se pasa el cursor por encima */
+  }

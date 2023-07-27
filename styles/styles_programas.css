@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    height: 50px;
+}
+
+#logoutp {
+    width: 90px;
+    height: 30px;
+}
+.navbar img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el navbar con scroll */
+.navbar-scrolled {
+    display: none; /* Ocultamos el navbar con scroll por defecto */
+    position: fixed; /* Hace que el navbar se mantenga en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    padding: 10px;
+    z-index: 999; /* Asegura que el navbar esté por encima de otros elementos */
+    justify-content: space-between; 
+}
+
+.navbar-scrolled img {
+    height: 30px;
+    margin-right: 0; 
+    margin-left: 10px; 
+}
+
+.navbar-scrolled ul {
+    display: flex;
+    gap: 20px;
+    margin-right: 10px; 
+}
+.navbar-scrolled ul li a {
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-scrolled ul li a:hover {
+    background-color: red;
+}
+
+.menu-text {
+    margin-right: 10px;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.presentation {
+    position: relative;
+}
+
+.presentation img {
+    width: 100%;
+}
+
+.title-box {
+    position: absolute;
+    top: 500px; /* Ajustamos la posición vertical para que esté arriba */
+    left: 20px; /* Ajustamos la posición horizontal para que esté a la izquierda */
+   
+    color: white;
+}
+
+.title-rectangle {
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.subtitle-rectangle {
+    background-color: #FF0000;
+    padding: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  
+}
+
+.title,
+.subtitle {
+    margin: 0;
+    font-size: 40px; /* Ajustamos el tamaño de la letra */
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Centramos verticalmente los elementos */
+    justify-content: space-between;
+}
+
+.left-column {
+    width: 50%;
+}
+
+.right-column {
+    width: 50%;
+}
+
+.right-column img {
+    width: 100%;
+    height: auto;
+}
+.left-column p {
+ margin: 10px;
+ margin-bottom: 25px;
+}
+
+/* Estilos para el div con fondo rojo y texto blanco */
+.left-column div:nth-child(2) {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center; /* Centramos horizontalmente el texto */
+}
+
+/* Estilos para todos los textos en la columna izquierda */
+.left-column div {
+    text-align: center; /* Centramos horizontalmente el texto */
+}
+
+/* Estilos generales del footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para las columnas del footer */
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Añadido para centrar los elementos en cada columna */
+}
+
+/* Estilos para el logo del footer */
+.footer-logo {
+    width: 80px;
+}
+
+/* Estilos para el título del footer */
+.footer-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; /* Añadido para centrar el título */
+}
+
+/* Estilos para los iconos del footer */
+.footer-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos para las secciones del footer */
+.footer-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-section-content {
+    flex: 1;
+}
+
+/* Estilos para el título de las secciones del footer */
+.footer-section-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center; /* Añadido para centrar el título */
+}
+
+/* Estilos para el texto de las secciones del footer */
+.footer-section-text {
+    font-size: 14px;
+    text-align: center; /* Añadido para centrar el texto */
+}
+
+/* Estilos para la línea blanca */
+.footer-divider {
+    border-top: 1px solid #fff;
+    
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center; /* Añadido para centrar los iconos */
+}
+
+.social-icon {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

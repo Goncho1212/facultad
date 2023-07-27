@@ -1,0 +1,382 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    height: 50px;
+}
+
+#logoutp {
+    width: 90px;
+    height: 30px;
+}
+.navbar img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el navbar con scroll */
+.navbar-scrolled {
+    display: none; /* Ocultamos el navbar con scroll por defecto */
+    position: fixed; /* Hace que el navbar se mantenga en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    padding: 10px;
+    z-index: 999; /* Asegura que el navbar esté por encima de otros elementos */
+    justify-content: space-between; 
+}
+
+.navbar-scrolled img {
+    height: 30px;
+    margin-right: 0; 
+    margin-left: 10px; 
+}
+
+.navbar-scrolled ul {
+    display: flex;
+    gap: 20px;
+    margin-right: 10px; 
+}
+.navbar-scrolled ul li a {
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-scrolled ul li a:hover {
+    background-color: red;
+}
+
+.menu-text {
+    margin-right: 10px;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.presentation {
+    position: relative;
+}
+
+.presentation img {
+    width: 100%;
+}
+
+.title-box {
+    position: absolute;
+    top: 700px; /* Ajustamos la posición vertical para que esté arriba */
+    left: 20px; /* Ajustamos la posición horizontal para que esté a la izquierda */
+   
+    color: white;
+}
+
+.title-rectangle {
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.subtitle-rectangle {
+    background-color: #FF0000;
+    padding: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  
+}
+
+.title,
+.subtitle {
+    margin: 0;
+    font-size: 30px; /* Ajustamos el tamaño de la letra */
+    font-weight: bold;
+}
+
+.sobre-facultad {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    align-items: center; 
+}
+
+.content {
+    flex: 1; 
+    padding-right: 40px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.sobre-facultad h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.sobre-facultad p {
+    margin: 10px 0;
+}
+
+.sobre-facultad img {
+    width: 300px; /* Ajustamos el tamaño de la imagen */
+}
+.paragraph {
+    height: 150px;
+    width: 450px;
+}
+.rectangulo {
+    width: 300px;
+    height: 350px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Necesario para posicionar el icono */
+}
+
+.icono {
+    position: absolute;
+    top: -20px; /* Ajusta la posición vertical para centrar el icono en el borde superior */
+}
+
+.icono img {
+    width: 60px; /* Ajusta el tamaño del icono */
+    height: 60px;
+}
+
+.titulo {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.texto {
+    margin-top: 20px;
+    text-align: center;
+}
+.container {
+    align-items: center;
+    display: flex; /* Utilizamos flex para colocar los rectángulos uno al lado del otro */
+    gap: 20px; /* Ajustamos el espacio entre los rectángulos */
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    height: 100vh; 
+    margin: 0px;
+}
+
+.noticias-carousel {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .noticias-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .noticia {
+   
+    border-radius: 30px;    
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .noticia img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;  
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .noticia h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .noticia p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+
+
+.eventos {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.splide__pagination {
+    display: none;
+}
+
+/* Estilos para el contenido del wrapper */
+.content-wrapper {
+    min-height: 100vh; /* Al menos el 100% del viewport height */
+    padding-bottom: 80px; /* Altura del footer */
+    box-sizing: border-box; /* Evita que el padding afecte el tamaño total */
+}
+
+/* Estilos para el footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alineación vertical al centro */
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 100%; /* Altura del footer */
+}
+
+/* Estilos para las columnas del footer */
+.column {
+    flex: 1; /* Hace que cada columna ocupe el mismo espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alineación vertical al centro */
+    
+
+}
+  .column img {
+    width: 250px;
+  }
+  
+  .column p, .column h3, .column hr {
+    margin: 0;
+  }
+  
+  .column p {
+    font-size: 16px;
+  }
+  
+  .column h3 {
+    font-size: 24px;
+  }
+  
+  .column hr {
+    border: 1px solid #fff;
+    margin: 10px 0;
+  }
+  
+/* Estilos generales del footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para las columnas del footer */
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Añadido para centrar los elementos en cada columna */
+}
+
+/* Estilos para el logo del footer */
+.footer-logo {
+    width: 80px;
+}
+
+/* Estilos para el título del footer */
+.footer-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; /* Añadido para centrar el título */
+}
+
+/* Estilos para los iconos del footer */
+.footer-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Estilos para las secciones del footer */
+.footer-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-section-content {
+    flex: 1;
+}
+
+/* Estilos para el título de las secciones del footer */
+.footer-section-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center; /* Añadido para centrar el título */
+}
+
+/* Estilos para el texto de las secciones del footer */
+.footer-section-text {
+    font-size: 14px;
+    text-align: center; /* Añadido para centrar el texto */
+}
+
+/* Estilos para la línea blanca */
+.footer-divider {
+    border-top: 1px solid #fff;
+    
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center; /* Añadido para centrar los iconos */
+}
+
+.social-icon {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
